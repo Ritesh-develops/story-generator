@@ -2,7 +2,7 @@ from typing import List
 from pydantic_settings import BaseSettings
 from pydantic import field_validator
 
-class Settings(BaseException):
+class Settings(BaseSettings):
     API_PREFIX:str = "/api"
     DEBUG: bool =False
     DATABASE_URL:str
